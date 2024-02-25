@@ -11,6 +11,8 @@ protocol ProductsListPresenterProtocol: AnyObject {
     
     func productsListFetched(products: [Product]?)
     
+    func showProductPage(product: Product)
+    
 }
 
 class ProductsListPresenter {
@@ -25,6 +27,11 @@ class ProductsListPresenter {
 }
 
 extension ProductsListPresenter: ProductsListPresenterProtocol {
+    
+    func showProductPage(product: Product) {
+        router.showProductPage(product: product)
+    }
+    
     
     func productsListFetched(products: [Product]?) {
         if products != nil {

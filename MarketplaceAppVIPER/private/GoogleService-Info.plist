@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>297566343877-sqoqlohqq13r8difptojrv166633urt9.apps.googleusercontent.com</string>
+	<string>297566343877-pfj8vnelbqountdjb43nqmjepfcdoct2.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.297566343877-sqoqlohqq13r8difptojrv166633urt9</string>
+	<string>com.googleusercontent.apps.297566343877-pfj8vnelbqountdjb43nqmjepfcdoct2</string>
 	<key>API_KEY</key>
 	<string>AIzaSyCCINqn-382fmdgs9V4nIAZMUNl8_A2AvM</string>
 	<key>GCM_SENDER_ID</key>
@@ -13,7 +13,7 @@
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>ClownTeam.MarketplaceApp</string>
+	<string>ClownTeam.MarketplaceAppVIPER</string>
 	<key>PROJECT_ID</key>
 	<string>marketplace-39f61</string>
 	<key>STORAGE_BUCKET</key>
@@ -29,6 +29,6 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:297566343877:ios:0b9f5077e0713798c1d6ac</string>
+	<string>1:297566343877:ios:bbca04adbc9f67c5c1d6ac</string>
 </dict>
 </plist>
