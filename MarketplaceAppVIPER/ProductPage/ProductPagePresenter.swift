@@ -35,7 +35,7 @@ class ProductPagePresenter: ProductPagePresenterProtocol {
     
     
     func sizePicked(size: String) {
-        interactor.pickedSize = size
+        interactor.pickedSize(size: size)
         
     }
     

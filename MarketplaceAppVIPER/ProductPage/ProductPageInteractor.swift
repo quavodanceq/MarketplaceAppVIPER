@@ -9,13 +9,18 @@ protocol ProductPageInteractorProtocol: AnyObject {
     
     var product: Product {get}
     
-    var pickedSize: String? { get set }
+    func pickedSize(size: String)
     
     func addToCart()
     
 }
 
 class ProductPageInteractor: ProductPageInteractorProtocol {
+    
+    func pickedSize(size: String) {
+        product.size = size
+    }
+    
     
     var product: Product
     
@@ -24,15 +29,23 @@ class ProductPageInteractor: ProductPageInteractorProtocol {
     }
     
     func addToCart() {
-        if pickedSize != nil {
+        
+        if product.size != nil {
+            CartManager.shared.addToCart(product)
             presenter?.addedToCart()
         } else {
             presenter?.errorAddingToCart()
         }
+        
+//        if pickedSize != nil {
+//            
+//            CartManager.shared.addToCart(product)
+//            presenter?.addedToCart()
+//        } else {
+//            presenter?.errorAddingToCart()
+//        }
     }
     
-    
-    var pickedSize: String?
     
     weak var presenter: ProductPagePresenterProtocol?
 }
