@@ -10,12 +10,21 @@ import Combine
 
 protocol CartInteractorProtocol: AnyObject {
     
-     func setupPublisher()
+    func setupPublisher()
     
     func removeFromCart(product: Product)
+    
+    func makeOrder(cart: [Product])
 }
 
 class CartInteractor: CartInteractorProtocol {
+    
+    func makeOrder(cart: [Product]) {
+        guard AuthManager.shared.isUsedLoggedIn() else { presenter?.logInError(); return }
+        guard CartManager.shared.checkUserInfo() else {presenter?.userInfoError(); return }
+        FirebaseManager.shared.addOrderToFirebase(cart: cart)
+    }
+    
     
     func removeFromCart(product: Product) {
         CartManager.shared.removeFromCart(product)

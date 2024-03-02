@@ -12,6 +12,12 @@ protocol CartPresenterProtocol: AnyObject {
     func cartContent(content: [Product])
     
     func removedFromCart(product: Product)
+    
+    func makeOrderButtonTapped(cart: [Product])
+    
+    func logInError()
+    
+    func userInfoError()
 }
 
 class CartPresenter {
@@ -26,6 +32,20 @@ class CartPresenter {
 }
 
 extension CartPresenter: CartPresenterProtocol {
+    
+    func logInError() {
+        view?.presentAlert(title: "Something went wrong", message: "You need to log in to make order")
+    }
+    
+    func userInfoError() {
+        view?.presentAlert(title: "Something went wrong", message: "Provide all information to make order")
+    }
+    
+    
+    func makeOrderButtonTapped(cart: [Product]) {
+        interactor.makeOrder(cart: cart)
+    }
+    
     
     func removedFromCart(product: Product) {
         interactor.removeFromCart(product: product)

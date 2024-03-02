@@ -11,6 +11,8 @@ protocol CartViewProtocol: AnyObject {
     
     func showCart(content: [Product])
     
+    func presentAlert(title: String, message: String)
+    
 }
 
 class CartViewController: UIViewController {
@@ -78,22 +80,8 @@ class CartViewController: UIViewController {
         
         sender.flash()
         
-        let alertController = UIAlertController()
-    
-        guard CartManager.shared.checkUserInfo() else {
-            presentAlertController(title: "Something went wrong", message: "Provide all information to make order")
-            return }
+        presenter?.makeOrderButtonTapped(cart: cart)
         
-//        guard AuthManager.shared.isUsedLoggedIn() else {
-//            presentAlertController(title: "Something went wrong", message: "You need to log in to make order")
-//            return
-//        }
-        
-        FirebaseManager.shared.addOrderToFirebase(cart: cart)
-        
-        CartManager.shared.removeCart()
-        
-        presentAlertController(title: "Success", message: "Order created succesfully")
     }
     
     private func presentAlertController(title: String, message: String) {
@@ -137,6 +125,11 @@ private extension CartViewController {
 
 // MARK: - CartViewProtocol
 extension CartViewController: CartViewProtocol {
+    
+    func presentAlert(title: String, message: String) {
+        presentAlertController(title: title, message: message)
+    }
+    
     
     func showCart(content: [Product]) {
         if content.isEmpty {
