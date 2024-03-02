@@ -20,9 +20,13 @@ class MainModuleBuilder {
         let cartVC = CartModuleBuilder.build()
         cartVC.tabBarItem.title = "Cart"
         cartVC.tabBarItem.image = UIImage(systemName: "cart")
+        let profileVC = UINavigationController(rootViewController: ProfileModuleBuilder.build())
+        profileVC.tabBarItem.title = "Profile"
+        profileVC.tabBarItem.image = UIImage(systemName: "person.crop.circle")
         let viewController = MainViewController()
         viewController.viewControllers = [listVC,
-                                          cartVC
+                                          cartVC,
+                                          profileVC
         ]
         presenter.view  = viewController
         viewController.presenter = presenter
