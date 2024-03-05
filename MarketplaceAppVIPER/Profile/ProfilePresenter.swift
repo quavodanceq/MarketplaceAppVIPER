@@ -19,6 +19,8 @@ protocol ProfilePresenterProtocol: AnyObject {
     
     func logOutButtonTapped()
     
+    func ordersButtonTapped()
+    
 }
 
 class ProfilePresenter {
@@ -33,6 +35,11 @@ class ProfilePresenter {
 }
 
 extension ProfilePresenter: ProfilePresenterProtocol {
+    
+    func ordersButtonTapped() {
+        router.showOrders()
+    }
+    
     
     func logOutButtonTapped() {
         interactor.logOut()

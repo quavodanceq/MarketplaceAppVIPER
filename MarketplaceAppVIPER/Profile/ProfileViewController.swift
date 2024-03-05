@@ -120,7 +120,7 @@ class ProfileViewController: UIViewController {
         
         sender.flash()
         
-        
+        presenter?.ordersButtonTapped()
     }
     
     @objc private func infoButtonTapped(_ sender: UIButton) {
