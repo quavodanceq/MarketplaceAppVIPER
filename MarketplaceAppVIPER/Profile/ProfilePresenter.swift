@@ -21,6 +21,8 @@ protocol ProfilePresenterProtocol: AnyObject {
     
     func ordersButtonTapped()
     
+    func infoButtonTapped()
+    
 }
 
 class ProfilePresenter {
@@ -35,6 +37,11 @@ class ProfilePresenter {
 }
 
 extension ProfilePresenter: ProfilePresenterProtocol {
+    
+    func infoButtonTapped() {
+        router.showInfo()
+    }
+    
     
     func ordersButtonTapped() {
         router.showOrders()

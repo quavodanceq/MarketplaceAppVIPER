@@ -18,6 +18,8 @@ protocol CartPresenterProtocol: AnyObject {
     func logInError()
     
     func userInfoError()
+    
+    func orderCreationSuccess()
 }
 
 class CartPresenter {
@@ -39,6 +41,10 @@ extension CartPresenter: CartPresenterProtocol {
     
     func userInfoError() {
         view?.presentAlert(title: "Something went wrong", message: "Provide all information to make order")
+    }
+    
+    func orderCreationSuccess() {
+        view?.presentAlert(title: "Success", message: "Order created successfully")
     }
     
     

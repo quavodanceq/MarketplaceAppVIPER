@@ -21,8 +21,10 @@ class CartInteractor: CartInteractorProtocol {
     
     func makeOrder(cart: [Product]) {
         guard AuthManager.shared.isUsedLoggedIn() else { presenter?.logInError(); return }
-        guard CartManager.shared.checkUserInfo() else {presenter?.userInfoError(); return }
+        guard CartManager.shared.checkUserInfo() else { presenter?.userInfoError(); return }
         FirebaseManager.shared.addOrderToFirebase(cart: cart)
+        CartManager.shared.removeCart()
+        presenter?.orderCreationSuccess()
     }
     
     

@@ -111,7 +111,6 @@ class ProfileViewController: UIViewController {
         
         presenter?.logInButtonTapped()
         
-    
     }
     
     @objc private func ordersButtonTapped(_ sender: UIButton) {
@@ -129,6 +128,7 @@ class ProfileViewController: UIViewController {
         
         sender.flash()
         
+        presenter?.infoButtonTapped()
     }
     
     @objc private func logOutButtonTapped(_ sender: UIButton) {

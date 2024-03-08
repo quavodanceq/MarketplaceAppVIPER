@@ -55,6 +55,14 @@
 		6449ED932B975D4000A93BC0 /* OrdersRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6449ED8E2B975D4000A93BC0 /* OrdersRouter.swift */; };
 		6449ED942B975D4000A93BC0 /* OrdersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6449ED8F2B975D4000A93BC0 /* OrdersViewController.swift */; };
 		6449ED952B975D4000A93BC0 /* OrdersInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6449ED902B975D4000A93BC0 /* OrdersInteractor.swift */; };
+		6449ED9C2B9B100800A93BC0 /* UserInfoModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6449ED972B9B100800A93BC0 /* UserInfoModuleBuilder.swift */; };
+		6449ED9D2B9B100800A93BC0 /* UserInfoPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6449ED982B9B100800A93BC0 /* UserInfoPresenter.swift */; };
+		6449ED9E2B9B100800A93BC0 /* UserInfoRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6449ED992B9B100800A93BC0 /* UserInfoRouter.swift */; };
+		6449ED9F2B9B100800A93BC0 /* UserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6449ED9A2B9B100800A93BC0 /* UserInfoViewController.swift */; };
+		6449EDA02B9B100800A93BC0 /* UserInfoInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6449ED9B2B9B100800A93BC0 /* UserInfoInteractor.swift */; };
+		6449EDA22B9B107400A93BC0 /* CustomDropDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6449EDA12B9B107400A93BC0 /* CustomDropDown.swift */; };
+		6449EDA52B9B10E600A93BC0 /* iOSDropDown in Frameworks */ = {isa = PBXBuildFile; productRef = 6449EDA42B9B10E600A93BC0 /* iOSDropDown */; };
+		6449EDA72B9B1B2C00A93BC0 /* UserInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6449EDA62B9B1B2C00A93BC0 /* UserInfoModel.swift */; };
 		647112D42B8B1EFE0017725C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647112D32B8B1EFE0017725C /* AppDelegate.swift */; };
 		647112D62B8B1EFE0017725C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647112D52B8B1EFE0017725C /* SceneDelegate.swift */; };
 		647112DD2B8B1F000017725C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 647112DC2B8B1F000017725C /* Assets.xcassets */; };
@@ -141,6 +149,13 @@
 		6449ED8E2B975D4000A93BC0 /* OrdersRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersRouter.swift; sourceTree = "<group>"; };
 		6449ED8F2B975D4000A93BC0 /* OrdersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersViewController.swift; sourceTree = "<group>"; };
 		6449ED902B975D4000A93BC0 /* OrdersInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersInteractor.swift; sourceTree = "<group>"; };
+		6449ED972B9B100800A93BC0 /* UserInfoModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoModuleBuilder.swift; sourceTree = "<group>"; };
+		6449ED982B9B100800A93BC0 /* UserInfoPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoPresenter.swift; sourceTree = "<group>"; };
+		6449ED992B9B100800A93BC0 /* UserInfoRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoRouter.swift; sourceTree = "<group>"; };
+		6449ED9A2B9B100800A93BC0 /* UserInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoViewController.swift; sourceTree = "<group>"; };
+		6449ED9B2B9B100800A93BC0 /* UserInfoInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoInteractor.swift; sourceTree = "<group>"; };
+		6449EDA12B9B107400A93BC0 /* CustomDropDown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDropDown.swift; sourceTree = "<group>"; };
+		6449EDA62B9B1B2C00A93BC0 /* UserInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoModel.swift; sourceTree = "<group>"; };
 		647112D02B8B1EFE0017725C /* MarketplaceAppVIPER.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarketplaceAppVIPER.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		647112D32B8B1EFE0017725C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		647112D52B8B1EFE0017725C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -168,6 +183,7 @@
 				64F370582B8B2E4C005FC900 /* SnapKit in Frameworks */,
 				64F3704D2B8B2C13005FC900 /* FirebaseDatabase in Frameworks */,
 				64F370552B8B2C13005FC900 /* FirebaseStorage in Frameworks */,
+				6449EDA52B9B10E600A93BC0 /* iOSDropDown in Frameworks */,
 				64F370452B8B2B49005FC900 /* SDWebImage in Frameworks */,
 				6449ED792B93339E00A93BC0 /* GoogleSignInSwift in Frameworks */,
 				64F3704B2B8B2C13005FC900 /* FirebaseAuth in Frameworks */,
@@ -200,6 +216,7 @@
 				6424A2BB2B8B41220040C091 /* LoginResult.swift */,
 				6424A2BC2B8B41220040C091 /* OrderModel.swift */,
 				6424A2BD2B8B41220040C091 /* ProductModel.swift */,
+				6449EDA62B9B1B2C00A93BC0 /* UserInfoModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -217,6 +234,7 @@
 		6424A2C92B8B440B0040C091 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				6449EDA12B9B107400A93BC0 /* CustomDropDown.swift */,
 				6424A2CA2B8B440B0040C091 /* Cell.swift */,
 				6424A2CB2B8B440B0040C091 /* EmptyCartView.swift */,
 				6424A2CC2B8B440B0040C091 /* ProductCell.swift */,
@@ -302,6 +320,18 @@
 			path = Orders;
 			sourceTree = "<group>";
 		};
+		6449ED962B9B0FDD00A93BC0 /* UserInfo */ = {
+			isa = PBXGroup;
+			children = (
+				6449ED972B9B100800A93BC0 /* UserInfoModuleBuilder.swift */,
+				6449ED982B9B100800A93BC0 /* UserInfoPresenter.swift */,
+				6449ED992B9B100800A93BC0 /* UserInfoRouter.swift */,
+				6449ED9A2B9B100800A93BC0 /* UserInfoViewController.swift */,
+				6449ED9B2B9B100800A93BC0 /* UserInfoInteractor.swift */,
+			);
+			path = UserInfo;
+			sourceTree = "<group>";
+		};
 		647112C72B8B1EFE0017725C = {
 			isa = PBXGroup;
 			children = (
@@ -333,6 +363,7 @@
 				6449ED682B8F5E8600A93BC0 /* Cart */,
 				6449ED7A2B93344C00A93BC0 /* Profile */,
 				6449ED8B2B975D1500A93BC0 /* Orders */,
+				6449ED962B9B0FDD00A93BC0 /* UserInfo */,
 				6424A2BA2B8B41220040C091 /* Models */,
 				6424A2C22B8B41F80040C091 /* Extensions */,
 				6424A2C92B8B440B0040C091 /* Views */,
@@ -417,6 +448,7 @@
 				64F370572B8B2E4C005FC900 /* SnapKit */,
 				6449ED762B93339E00A93BC0 /* GoogleSignIn */,
 				6449ED782B93339E00A93BC0 /* GoogleSignInSwift */,
+				6449EDA42B9B10E600A93BC0 /* iOSDropDown */,
 			);
 			productName = MarketplaceAppVIPER;
 			productReference = 647112D02B8B1EFE0017725C /* MarketplaceAppVIPER.app */;
@@ -495,6 +527,7 @@
 				64F370492B8B2C13005FC900 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				64F370562B8B2E4C005FC900 /* XCRemoteSwiftPackageReference "SnapKit" */,
 				6449ED752B93339E00A93BC0 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+				6449EDA32B9B10E600A93BC0 /* XCRemoteSwiftPackageReference "iOSDropDown" */,
 			);
 			productRefGroup = 647112D12B8B1EFE0017725C /* Products */;
 			projectDirPath = "";
@@ -540,11 +573,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				6449ED912B975D4000A93BC0 /* OrdersModuleBuilder.swift in Sources */,
+				6449ED9F2B9B100800A93BC0 /* UserInfoViewController.swift in Sources */,
 				6424A2C62B8B41F80040C091 /* UIColor + Extension.swift in Sources */,
 				6449ED802B93347200A93BC0 /* ProfileModuleBuilder.swift in Sources */,
 				6449ED952B975D4000A93BC0 /* OrdersInteractor.swift in Sources */,
 				6449ED5B2B8B83C700A93BC0 /* ProductPageInteractor.swift in Sources */,
 				6424A2DB2B8B440B0040C091 /* CartCell.swift in Sources */,
+				6449EDA02B9B100800A93BC0 /* UserInfoInteractor.swift in Sources */,
 				6424A2D82B8B440B0040C091 /* SizesView.swift in Sources */,
 				6449ED642B8CA3C700A93BC0 /* MainPresenter.swift in Sources */,
 				6449ED832B93347200A93BC0 /* ProfileViewController.swift in Sources */,
@@ -559,6 +594,7 @@
 				6424A2D92B8B440B0040C091 /* OrderCell.swift in Sources */,
 				6449ED662B8CA3C700A93BC0 /* MainViewController.swift in Sources */,
 				6424A2D52B8B440B0040C091 /* EmptyCartView.swift in Sources */,
+				6449EDA72B9B1B2C00A93BC0 /* UserInfoModel.swift in Sources */,
 				6424A2DA2B8B440B0040C091 /* CarouselView.swift in Sources */,
 				6449ED672B8CA3C700A93BC0 /* MainInteractor.swift in Sources */,
 				6449ED572B8B83C700A93BC0 /* ProductPageModuleBuilder.swift in Sources */,
@@ -573,7 +609,9 @@
 				6449ED922B975D4000A93BC0 /* OrdersPresenter.swift in Sources */,
 				647112D62B8B1EFE0017725C /* SceneDelegate.swift in Sources */,
 				6449ED742B8F618300A93BC0 /* CartManager.swift in Sources */,
+				6449EDA22B9B107400A93BC0 /* CustomDropDown.swift in Sources */,
 				6424A2C82B8B41F80040C091 /* CartPublisher.swift in Sources */,
+				6449ED9D2B9B100800A93BC0 /* UserInfoPresenter.swift in Sources */,
 				6424A2E22B8B474B0040C091 /* FirebaseManager.swift in Sources */,
 				6424A2DD2B8B440B0040C091 /* CustomLabel.swift in Sources */,
 				6424A2D42B8B440B0040C091 /* Cell.swift in Sources */,
@@ -589,7 +627,9 @@
 				6449ED812B93347200A93BC0 /* ProfilePresenter.swift in Sources */,
 				64F370392B8B2916005FC900 /* ProductsListModuleBuilder.swift in Sources */,
 				6449ED632B8CA3C700A93BC0 /* MainModuleBuilder.swift in Sources */,
+				6449ED9C2B9B100800A93BC0 /* UserInfoModuleBuilder.swift in Sources */,
 				6449ED942B975D4000A93BC0 /* OrdersViewController.swift in Sources */,
+				6449ED9E2B9B100800A93BC0 /* UserInfoRouter.swift in Sources */,
 				6424A2C02B8B41230040C091 /* ProductModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -932,6 +972,14 @@
 				minimumVersion = 7.0.0;
 			};
 		};
+		6449EDA32B9B10E600A93BC0 /* XCRemoteSwiftPackageReference "iOSDropDown" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jriosdev/iOSDropDown.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.4.0;
+			};
+		};
 		64F370432B8B2B49005FC900 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SDWebImage/SDWebImage";
@@ -968,6 +1016,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 6449ED752B93339E00A93BC0 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
 			productName = GoogleSignInSwift;
+		};
+		6449EDA42B9B10E600A93BC0 /* iOSDropDown */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6449EDA32B9B10E600A93BC0 /* XCRemoteSwiftPackageReference "iOSDropDown" */;
+			productName = iOSDropDown;
 		};
 		64F370442B8B2B49005FC900 /* SDWebImage */ = {
 			isa = XCSwiftPackageProductDependency;
