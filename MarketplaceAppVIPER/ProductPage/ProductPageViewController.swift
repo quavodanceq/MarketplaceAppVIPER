@@ -21,8 +21,6 @@ protocol ProductPageViewProtocol: AnyObject {
 
 class ProductPageViewController: UIViewController {
     
-    
-    
     private let nameLabel = UILabel()
     
     private var collectionView: UICollectionView!
@@ -199,6 +197,7 @@ extension ProductPageViewController: ProductPageViewProtocol {
         self.product = product
         self.collectionView.reloadData()
         self.priceLabel.text = "\(product.price)$"
+        pageView.numberOfPages = product.imagesNames.count ?? 0
     }
     
    

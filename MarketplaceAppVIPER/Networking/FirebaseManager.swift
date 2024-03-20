@@ -32,7 +32,7 @@ class FirebaseManager {
             } else {
                 completion(nil)
             }
-
+            
         }
     }
     
@@ -86,11 +86,10 @@ class FirebaseManager {
                 }
                 completion(orders)
                 
-            } else {
+            } else    {
                 completion(nil)
             }
         }
-            }
-    
-    
+    }
 }
+                    

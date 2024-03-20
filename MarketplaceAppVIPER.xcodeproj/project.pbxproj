@@ -377,6 +377,7 @@
 			isa = PBXGroup;
 			children = (
 				647112EA2B8B1F000017725C /* MarketplaceAppVIPERTests.swift */,
+				64E01D962BA992E0004A0B2A /* ProductsListTests */,
 			);
 			path = MarketplaceAppVIPERTests;
 			sourceTree = "<group>";
@@ -388,6 +389,13 @@
 				647112F62B8B1F000017725C /* MarketplaceAppVIPERUITestsLaunchTests.swift */,
 			);
 			path = MarketplaceAppVIPERUITests;
+			sourceTree = "<group>";
+		};
+		64E01D962BA992E0004A0B2A /* ProductsListTests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ProductsListTests;
 			sourceTree = "<group>";
 		};
 		64F370322B8B28A1005FC900 /* Application */ = {
