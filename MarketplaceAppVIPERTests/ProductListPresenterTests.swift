@@ -1,14 +1,14 @@
 //
-//  MarketplaceAppVIPERTests.swift
+//  ProductListPresenterTests.swift
 //  MarketplaceAppVIPERTests
 //
-//  Created by Куат Оралбеков on 25.02.2024.
+//  Created by Куат Оралбеков on 20.03.2024.
 //
 
 import XCTest
 @testable import MarketplaceAppVIPER
 
-final class MarketplaceAppVIPERTests: XCTestCase {
+final class ProductListPresenterTests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -32,5 +32,24 @@ final class MarketplaceAppVIPERTests: XCTestCase {
             // Put the code you want to measure the time of here.
         }
     }
+    
+    func testPresentData() {
+        let interactor = ProductListInteractorMock()
+        let router = ProductListRouterMock()
+        let presenter = ProductsListPresenter(interactor: interactor, router: router)
+        XCTAssertNil(nil)
+    }
 
+}
+
+class ProductListInteractorMock: ProductsListInteractorProtocol {
+    
+    func fetchProductList() {
+        
+    }
+    
+}
+
+class ProductListRouterMock: ProductsListRouterProtocol {
+    
 }
